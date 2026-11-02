@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+    /* Brand palette: source values */
+    --stellify-sky-100: #EAF5FE;
+    --stellify-sky-500: #3BAAFC;
+    --stellify-sky-600: #268FE8;
+    --stellify-blue-700: #396EE5;
+    --stellify-indigo-600: #405CD4;
+    --stellify-violet-100: #ECEFFD;
+    --stellify-violet-400: #7F67EF;
+    --stellify-violet-500: #694AF8;
+    --stellify-pink-400: #C76CC6;
+
+    /* Neutrals */
+    --color-ink: #17233F;
+    --color-text-secondary: #64748B;
+    --color-text-muted: #94A3B8;
+    --color-border: #E5EAF3;
+    --color-surface: #F8FAFD;
+    --color-canvas: #FFFFFF;
+
+    /* Semantic tokens */
+    --text-primary: var(--color-ink);
+    --text-secondary: var(--color-text-secondary);
+    --text-muted: var(--color-text-muted);
+    --text-accent: var(--stellify-sky-600);
+
+    --button-primary-bg: var(--stellify-sky-500);
+    --button-primary-hover: var(--stellify-sky-600);
+    --button-primary-text: #FFFFFF;
+
+    --link-primary: var(--stellify-sky-600);
+    --border-default: var(--color-border);
+    --surface-default: var(--color-canvas);
+    --surface-subtle: var(--color-surface);
+
+    /* Typography source values */
+    --stellify-font-brand: "Manrope", sans-serif;
+    --stellify-font-primary: "Manrope", sans-serif;
+    --stellify-font-title: "M PLUS Rounded 1c", sans-serif;
+    --stellify-font-name: "Outfit", sans-serif;
+    --stellify-font-secondary: "Nunito", sans-serif;
+    --stellify-font-accent: "Quicksand", sans-serif;
+
+    /* Radius and shadow */
+    --radius-card: 1.25rem;
+    --shadow-card: 0 8px 24px rgb(45 91 150 / 8%);
+}
+
+
+
+/* Tailwind utilities: bg-sky-500, font-title, etc. */
+@theme {
+    --color-sky-100: var(--stellify-sky-100);
+    --color-sky-500: var(--stellify-sky-500);
+    --color-sky-600: var(--stellify-sky-600);
+    --color-blue-700: var(--stellify-blue-700);
+    --color-violet-100: var(--stellify-violet-100);
+    --color-violet-500: var(--stellify-violet-500);
+    --color-pink-400: var(--stellify-pink-400);
+
+    --font-brand: var(--stellify-font-brand);
+    --font-primary: var(--stellify-font-primary);
+    --font-title: var(--stellify-font-title);
+    --font-name: var(--stellify-font-name);
+    --font-secondary: var(--stellify-font-secondary);
+    --font-accent: var(--stellify-font-accent);
+
+    --font-brand: 'M PLUS Rounded 1c', sans-serif;
+    --font-primary: 'Manrope', sans-serif;
+    --font-title: 'M PLUS Rounded 1c', sans-serif;
+    --font-name: 'Outfit', sans-serif;
+    --font-secondary: 'Nunito', sans-serif;
+    --font-accent: 'Quicksand', sans-serif;
+}
