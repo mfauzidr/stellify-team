@@ -1,5 +1,5 @@
 import {useNavigate} from "react-router-dom";
-import brand from "/assets/logo/brand.png"
+import brand from "/assets/logos/brand.png"
 
 const Brand = () => {
     const navigate = useNavigate()

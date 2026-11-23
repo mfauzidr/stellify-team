@@ -1,4 +1,3 @@
-import React from "react";
 import Brand from "../components/atoms/Brand";
 
 const palette = [

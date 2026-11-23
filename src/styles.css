@@ -51,26 +51,44 @@
 
 
 /* Tailwind utilities: bg-sky-500, font-title, etc. */
+
 @theme {
+    /* Brand colors */
     --color-sky-100: var(--stellify-sky-100);
     --color-sky-500: var(--stellify-sky-500);
     --color-sky-600: var(--stellify-sky-600);
     --color-blue-700: var(--stellify-blue-700);
+    --color-indigo-600: var(--stellify-indigo-600);
     --color-violet-100: var(--stellify-violet-100);
+    --color-violet-400: var(--stellify-violet-400);
     --color-violet-500: var(--stellify-violet-500);
     --color-pink-400: var(--stellify-pink-400);
 
+    /* Semantic colors */
+    --color-stellify-ink: var(--color-ink);
+    --color-stellify-text-primary: var(--text-primary);
+    --color-stellify-text-secondary: var(--text-secondary);
+    --color-stellify-text-muted: var(--text-muted);
+    --color-stellify-text-accent: var(--text-accent);
+
+    --color-stellify-border: var(--border-default);
+    --color-stellify-surface: var(--surface-default);
+    --color-stellify-surface-subtle: var(--surface-subtle);
+
+    --color-stellify-button-primary: var(--button-primary-bg);
+    --color-stellify-button-primary-hover: var(--button-primary-hover);
+
+    /* Typography */
     --font-brand: var(--stellify-font-brand);
     --font-primary: var(--stellify-font-primary);
     --font-title: var(--stellify-font-title);
     --font-name: var(--stellify-font-name);
     --font-secondary: var(--stellify-font-secondary);
     --font-accent: var(--stellify-font-accent);
+}
 
-    --font-brand: 'M PLUS Rounded 1c', sans-serif;
-    --font-primary: 'Manrope', sans-serif;
-    --font-title: 'M PLUS Rounded 1c', sans-serif;
-    --font-name: 'Outfit', sans-serif;
-    --font-secondary: 'Nunito', sans-serif;
-    --font-accent: 'Quicksand', sans-serif;
+@layer components {
+  .page-container {
+    @apply mx-auto w-full max-w-360 px-4 sm:px-6 lg:px-8;
+  }
 }

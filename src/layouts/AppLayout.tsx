@@ -1,13 +1,17 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../components/organism/Navbar";
+import Navbar from "../components/organism/Navbar/Navbar";
+import Footer from "../components/organism/Footer/Footer";
+
 const AppLayout = () => {
-  
   return (
     <>
-    <Navbar/>
-      <main className="mx-2 my-2">
+      <Navbar />
+
+      <main className="page-container">
         <Outlet />
       </main>
+
+      <Footer />
     </>
   );
 };
